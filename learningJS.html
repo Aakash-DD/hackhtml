@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+	<input id="todo"><button id="btn">ADD</button>
+	<br>
+	<ul id="list">
+		<li>Task one</li>
+	</ul><br>
+
+
+<script>
+let todoBox = document.getElementById('todo');
+let addbtn=document.getElementById('btn');
+let todoList = document.getElementById('list');
+addbtn.onclick = function(){
+
+let todo=todoBox.value;
+let newTaskListItem=document.createElement('li')  // <li></li>
+newTaskListItem.innerText = todo;
+todoList.appendChild(newTaskListItem)
+}
+</script>
+</body>
+</html>
